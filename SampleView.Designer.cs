@@ -70,7 +70,7 @@
             this.btnAdd.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnAdd.ImageRotate = 0F;
             this.btnAdd.ImageSize = new System.Drawing.Size(55, 55);
-            this.btnAdd.Location = new System.Drawing.Point(62, 84);
+            this.btnAdd.Location = new System.Drawing.Point(62, 83);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(55, 55);
             this.btnAdd.Size = new System.Drawing.Size(55, 55);
