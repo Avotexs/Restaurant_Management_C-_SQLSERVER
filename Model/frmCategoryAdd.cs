@@ -40,6 +40,7 @@ namespace RM.Model
             {
                 MessageBox.Show("Saved successfully ^^");
                 id = 0;
+                txtName.Text = "";
                 txtName.Focus();
             }
         }

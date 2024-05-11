@@ -1,5 +1,6 @@
 ﻿using RM.Model;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,5 +47,29 @@ namespace RM
             GetData();
         }
 
+        private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
+            {
+                frmCategoryAdd frm = new frmCategoryAdd();
+                frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
+                frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
+                frm.ShowDialog();
+                GetData();
+            }
+
+            if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
+            {
+                int  id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
+                string qry = "Delete from Category where catID = " + id + "";
+                Hashtable ht = new Hashtable();
+                Mainclass.SQL(qry, ht);
+
+                MessageBox.Show("Deleted successfully ;)");
+                GetData();
+
+            }
+
+        }
     }
 }
