@@ -121,7 +121,7 @@
   <data name="btnAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAA19JREFUeF7tnUtqFGEUhTNR9+Jj5BbsmA24HqfVhEiCokS6XYBb8LEJdSE+hopW
+        DQAACw0B7QfALAAAA19JREFUeF7tnUtqFGEUhTNR9+Jj5BbsmA24HqfVhEiCokS6XYBb8LEJdSE+hopW
         NQdK8LuFk3MvnboffLMD5/9PN5WMuk6apmmapmmapmmapmma5n959GZ4cLrbXm3228+nu+HH6X77+0Y7
         3vFw1/1wudmd39cM+ZxdXd3Z7LYvx8P8woOuwM1u+Dl++V48efv0tmbJ4TD+fvhIh1qlu+2H1A9hHP8V
         HmTFjk+C55rHy/TMX/NjJ3J6HD1+PdzTTD6mP7h0gHZ0NzzTTD7GT/oLlrejwyfN5GMs+v5vcTs5/m38
@@ -138,6 +138,9 @@
         c8T0H8B4qDW8W2C84+GuF2nP/KZpmqZpmqZpmqZpmuYGcHLyByCB4g+rrIptAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="guna2MessageDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAZGQAAAEAIACoogAAFgAAACgAAABkAAAAyAAAAAEAIAAAAAAAQJwAABMLAAATCwAAAAAAAAAA

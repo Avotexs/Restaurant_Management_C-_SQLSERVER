@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RM.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +47,16 @@ namespace RM
         private void btnCategory_Click(object sender, EventArgs e)
         {
             AddControls(new frmCategoryView());
+        }
+
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmTableView());
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmStaffView());
         }
     }
 }

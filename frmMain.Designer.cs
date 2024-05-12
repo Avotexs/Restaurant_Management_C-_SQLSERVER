@@ -245,6 +245,7 @@
             this.btnStaff.Text = "Staff";
             this.btnStaff.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnStaff.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnTable
             // 
@@ -274,6 +275,7 @@
             this.btnTable.Text = "Tables";
             this.btnTable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTable.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
             // 
             // btnCategory
             // 
