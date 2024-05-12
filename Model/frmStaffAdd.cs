@@ -38,7 +38,7 @@ namespace RM.Model
             }
 
             Hashtable ht = new Hashtable();
-            ht.Add("id", id);
+            ht.Add("@id", id);
             ht.Add("@Name", txtName.Text);
             ht.Add("@phone", txtPhone.Text);
             ht.Add("@role", cbRole.Text);

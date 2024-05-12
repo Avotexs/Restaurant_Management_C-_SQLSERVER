@@ -33,7 +33,7 @@ namespace RM.Model
             }
 
             Hashtable ht = new Hashtable();
-            ht.Add("id", id);
+            ht.Add("@id", id);
             ht.Add("@Name", txtName.Text);
 
             if (Mainclass.SQL(qry, ht) > 0)
