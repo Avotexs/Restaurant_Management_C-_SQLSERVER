@@ -26,7 +26,12 @@ namespace RM.View
 
         public void GetData()
         {
-            string qry = "select pID,pName,pPrice,CategoryID,c.catName from products p inner join category c on c.catID = p.CategoryID  where pName like '%" + txtSeach.Text + "%' ";
+            string qry = "SELECT p.pID, p.pName, p.pPrice, p.CategoryID, c.catName " +
+             "FROM products p " +
+             "INNER JOIN category c ON c.catID = p.CategoryID " +
+             "WHERE p.pName LIKE '%" + txtSeach.Text + "%' " +
+             "OR c.catName LIKE '%" + txtSeach.Text + "%'"; 
+            
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvName);

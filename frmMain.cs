@@ -1,4 +1,5 @@
-﻿using RM.View;
+﻿using RM.Model;
+using RM.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,6 +63,13 @@ namespace RM
         private void btnProduct_Click(object sender, EventArgs e)
         {
             AddControls(new frmProductView());
+        }
+
+        private void btnPOS_Click(object sender, EventArgs e)
+        {
+            frmPOS frm = new frmPOS();
+            frm.Show();
+
         }
     }
 }
