@@ -303,6 +303,16 @@ namespace RM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_id_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-id-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_insert_card_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-insert-card-96", resourceCulture);
@@ -366,6 +376,26 @@ namespace RM.Properties {
         internal static System.Drawing.Bitmap icons8_restaurant_table_100__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-restaurant-table-100 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_restaurant_table_100__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-restaurant-table-100 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_restaurant_table_100__1_2 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-restaurant-table-100 (1)2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -20,6 +20,9 @@ namespace RM.Model
             InitializeComponent();
         }
 
+        public int MainID = 0;
+        public String OrderType;
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -69,6 +72,14 @@ namespace RM.Model
         private void b_Click(object sender, EventArgs e)
         {
             Guna.UI2.WinForms.Guna2Button b =(Guna.UI2.WinForms.Guna2Button)sender;
+            if(b.Text == "All Categories")
+            {
+                txtSeach.Text = "1";
+                txtSeach.Text = "";
+                return;
+
+
+            }
 
             foreach (var item in ProductPanel.Controls)
             {
@@ -182,7 +193,62 @@ namespace RM.Model
 
         }
 
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            guna2DataGridView1.Rows.Clear();
+            MainID = 0;
+            lblTotal.Text = "00.00";
 
+        }
+
+        private void btnDelivery_Click(object sender, EventArgs e)
+        {
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            OrderType = "Delivery";
+        }
+
+        private void btnTake_Click(object sender, EventArgs e)
+        {
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            OrderType = "Take Away";
+        }
+
+        private void btnDin_Click(object sender, EventArgs e)
+        {
+
+            frmTableSelect frm = new frmTableSelect();
+
+            if (frm.TableName != "")
+            {
+                lblTable.Text = frm.TableName;
+            }
+            else
+            {
+                lblTable.Text = "";
+            }
+
+            frmWaiterSelect frm2 = new frmWaiterSelect();
+            if (frm2.waiterName != "")
+            {
+                lblWaiter.Text = frm2.waiterName;
+            }
+            else
+            {
+                lblWaiter.Text = "";
+            }
+
+        }
+    
     }
 
 

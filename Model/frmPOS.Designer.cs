@@ -33,10 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPOS));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblTable = new System.Windows.Forms.Label();
             this.lblWaiter = new System.Windows.Forms.Label();
+            this.lblTable = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.ProductPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.CategoryPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -46,8 +48,11 @@
             this.dgvQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSeach = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnDin = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnHold = new Guna.UI2.WinForms.Guna2TileButton();
-            this.brnDin = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnTake = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnDelivery = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnKot = new Guna.UI2.WinForms.Guna2TileButton();
@@ -55,10 +60,6 @@
             this.btnNew = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnExit = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSeach = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -77,10 +78,37 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1135, 100);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Lucida Calligraphy", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(859, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 31);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Total";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotal.Location = new System.Drawing.Point(966, 14);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(77, 32);
+            this.lblTotal.TabIndex = 1;
+            this.lblTotal.Text = "00.00";
+            // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.guna2TileButton1);
+            this.guna2Panel2.Controls.Add(this.btnDin);
             this.guna2Panel2.Controls.Add(this.btnHold);
-            this.guna2Panel2.Controls.Add(this.brnDin);
             this.guna2Panel2.Controls.Add(this.btnTake);
             this.guna2Panel2.Controls.Add(this.btnDelivery);
             this.guna2Panel2.Controls.Add(this.btnKot);
@@ -98,17 +126,18 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1135, 100);
             this.guna2Panel2.TabIndex = 0;
             // 
-            // label1
+            // lblWaiter
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(94, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "POS";
+            this.lblWaiter.AutoSize = true;
+            this.lblWaiter.BackColor = System.Drawing.Color.Transparent;
+            this.lblWaiter.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWaiter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblWaiter.Location = new System.Drawing.Point(820, 59);
+            this.lblWaiter.Name = "lblWaiter";
+            this.lblWaiter.Size = new System.Drawing.Size(77, 21);
+            this.lblWaiter.TabIndex = 1;
+            this.lblWaiter.Text = "Waiter";
+            this.lblWaiter.Visible = false;
             // 
             // lblTable
             // 
@@ -123,18 +152,17 @@
             this.lblTable.Text = "Table";
             this.lblTable.Visible = false;
             // 
-            // lblWaiter
+            // label1
             // 
-            this.lblWaiter.AutoSize = true;
-            this.lblWaiter.BackColor = System.Drawing.Color.Transparent;
-            this.lblWaiter.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWaiter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWaiter.Location = new System.Drawing.Point(820, 59);
-            this.lblWaiter.Name = "lblWaiter";
-            this.lblWaiter.Size = new System.Drawing.Size(77, 21);
-            this.lblWaiter.TabIndex = 1;
-            this.lblWaiter.Text = "Waiter";
-            this.lblWaiter.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(94, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "POS";
             // 
             // ProductPanel
             // 
@@ -273,6 +301,82 @@
             this.dgvAmount.ReadOnly = true;
             this.dgvAmount.Width = 60;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(144, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Search";
+            // 
+            // txtSeach
+            // 
+            this.txtSeach.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSeach.DefaultText = "";
+            this.txtSeach.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSeach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSeach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSeach.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSeach.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSeach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSeach.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSeach.IconLeft = global::RM.Properties.Resources.icons8_search_96;
+            this.txtSeach.Location = new System.Drawing.Point(144, 123);
+            this.txtSeach.Name = "txtSeach";
+            this.txtSeach.PasswordChar = '\0';
+            this.txtSeach.PlaceholderText = "Seach Here";
+            this.txtSeach.SelectedText = "";
+            this.txtSeach.Size = new System.Drawing.Size(285, 36);
+            this.txtSeach.TabIndex = 2;
+            this.txtSeach.TextChanged += new System.EventHandler(this.txtSeach_TextChanged);
+            // 
+            // guna2TileButton1
+            // 
+            this.guna2TileButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
+            this.guna2TileButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(62)))), ((int)(((byte)(83)))));
+            this.guna2TileButton1.BorderRadius = 10;
+            this.guna2TileButton1.BorderThickness = 2;
+            this.guna2TileButton1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2TileButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
+            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2TileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(62)))), ((int)(((byte)(83)))));
+            this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2TileButton1.Image = global::RM.Properties.Resources.icons8_take_away_food_50;
+            this.guna2TileButton1.Location = new System.Drawing.Point(652, 12);
+            this.guna2TileButton1.Name = "guna2TileButton1";
+            this.guna2TileButton1.Size = new System.Drawing.Size(78, 78);
+            this.guna2TileButton1.TabIndex = 2;
+            this.guna2TileButton1.Text = "Take Away";
+            this.guna2TileButton1.Click += new System.EventHandler(this.btnTake_Click);
+            // 
+            // btnDin
+            // 
+            this.btnDin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
+            this.btnDin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(62)))), ((int)(((byte)(83)))));
+            this.btnDin.BorderRadius = 10;
+            this.btnDin.BorderThickness = 2;
+            this.btnDin.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnDin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
+            this.btnDin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(62)))), ((int)(((byte)(83)))));
+            this.btnDin.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDin.ForeColor = System.Drawing.Color.White;
+            this.btnDin.Image = global::RM.Properties.Resources.icons8_restaurant_table_100__1_2;
+            this.btnDin.Location = new System.Drawing.Point(736, 12);
+            this.btnDin.Name = "btnDin";
+            this.btnDin.Size = new System.Drawing.Size(78, 78);
+            this.btnDin.TabIndex = 2;
+            this.btnDin.Text = "Din in";
+            this.btnDin.Click += new System.EventHandler(this.btnDin_Click);
+            // 
             // btnHold
             // 
             this.btnHold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
@@ -294,33 +398,13 @@
             this.btnHold.TabIndex = 2;
             this.btnHold.Text = "Hold";
             // 
-            // brnDin
-            // 
-            this.brnDin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
-            this.brnDin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(62)))), ((int)(((byte)(83)))));
-            this.brnDin.BorderRadius = 10;
-            this.brnDin.BorderThickness = 2;
-            this.brnDin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
-            this.brnDin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.brnDin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.brnDin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.brnDin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.brnDin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(62)))), ((int)(((byte)(83)))));
-            this.brnDin.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brnDin.ForeColor = System.Drawing.Color.White;
-            this.brnDin.Image = global::RM.Properties.Resources.icons8_restaurant_table_50;
-            this.brnDin.Location = new System.Drawing.Point(736, 12);
-            this.brnDin.Name = "brnDin";
-            this.brnDin.Size = new System.Drawing.Size(78, 78);
-            this.brnDin.TabIndex = 2;
-            this.brnDin.Text = "Din in";
-            // 
             // btnTake
             // 
             this.btnTake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
             this.btnTake.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(62)))), ((int)(((byte)(83)))));
             this.btnTake.BorderRadius = 10;
             this.btnTake.BorderThickness = 2;
+            this.btnTake.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnTake.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
             this.btnTake.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTake.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -335,6 +419,7 @@
             this.btnTake.Size = new System.Drawing.Size(78, 78);
             this.btnTake.TabIndex = 2;
             this.btnTake.Text = "Take Away";
+            this.btnTake.Click += new System.EventHandler(this.btnTake_Click);
             // 
             // btnDelivery
             // 
@@ -342,6 +427,7 @@
             this.btnDelivery.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(62)))), ((int)(((byte)(83)))));
             this.btnDelivery.BorderRadius = 10;
             this.btnDelivery.BorderThickness = 2;
+            this.btnDelivery.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnDelivery.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(130)))), ((int)(((byte)(119)))));
             this.btnDelivery.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelivery.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -356,6 +442,7 @@
             this.btnDelivery.Size = new System.Drawing.Size(78, 78);
             this.btnDelivery.TabIndex = 2;
             this.btnDelivery.Text = "Delivery";
+            this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
             // 
             // btnKot
             // 
@@ -419,6 +506,7 @@
             this.btnNew.Size = new System.Drawing.Size(78, 78);
             this.btnNew.TabIndex = 2;
             this.btnNew.Text = "New";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnExit
             // 
@@ -448,62 +536,6 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(144, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Search";
-            // 
-            // txtSeach
-            // 
-            this.txtSeach.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSeach.DefaultText = "";
-            this.txtSeach.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSeach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSeach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSeach.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSeach.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSeach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSeach.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSeach.IconLeft = global::RM.Properties.Resources.icons8_search_96;
-            this.txtSeach.Location = new System.Drawing.Point(144, 123);
-            this.txtSeach.Name = "txtSeach";
-            this.txtSeach.PasswordChar = '\0';
-            this.txtSeach.PlaceholderText = "Seach Here";
-            this.txtSeach.SelectedText = "";
-            this.txtSeach.Size = new System.Drawing.Size(285, 36);
-            this.txtSeach.TabIndex = 2;
-            this.txtSeach.TextChanged += new System.EventHandler(this.txtSeach_TextChanged);
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTotal.Location = new System.Drawing.Point(966, 14);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(77, 32);
-            this.lblTotal.TabIndex = 1;
-            this.lblTotal.Text = "00.00";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Lucida Calligraphy", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(859, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 31);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Total";
-            // 
             // frmPOS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -518,7 +550,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPOS";
             this.Text = "frmPOS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -543,7 +575,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TileButton btnNew;
         private Guna.UI2.WinForms.Guna2TileButton btnHold;
-        private Guna.UI2.WinForms.Guna2TileButton brnDin;
         private Guna.UI2.WinForms.Guna2TileButton btnTake;
         private Guna.UI2.WinForms.Guna2TileButton btnDelivery;
         private Guna.UI2.WinForms.Guna2TileButton btnKot;
@@ -564,5 +595,7 @@
         public Guna.UI2.WinForms.Guna2TextBox txtSeach;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
+        private Guna.UI2.WinForms.Guna2TileButton btnDin;
     }
 }
